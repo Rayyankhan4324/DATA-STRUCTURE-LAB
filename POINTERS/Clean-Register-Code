@@ -1,0 +1,54 @@
+#include <iostream>
+#include <cstdlib> 
+using namespace std;
+
+int main() {
+    int NOParticipants;
+ 
+    cout << " Please enter the number of participants: ";
+    cin >> NOParticipants;
+    int *Attendance = (int*)calloc(NOParticipants, sizeof(int))
+    if (Attendance== NULL) { 
+        cout << " Memory allocation failed. Exiting program..." << endl;
+        return 1;
+    }
+    cout<<endl;
+    cout << "Attendance list created Everyone is absent by defaulT." << endl << endl;
+    cout << "---------------------------------" << endl;
+   for(int i=0; i<NOParticipants; i++)
+   {
+       cout << "Participant " << (i + 1) << ": ";
+       cin >> Attendance[i];
+       if(Attendance[i]!=1 && Attendance[i]!=0)
+       {
+           cout << "Invalid! Entry" << endl;
+            cout << "Participant " << (i + 1) << ": ";
+            cin >> Attendance[i];
+       }
+       
+   }
+
+    cout<<endl;
+    cout << " Final Attendance List (1 = Present, 0 = Absent):" << endl << endl;
+    
+    cout << "   --------------------------" << endl;
+   for (int i = 0; i < NOParticipants; i++)
+   {
+    cout << "  | Participant " << (i + 1) << " : ";
+    
+    if (Attendance[i] == 1)
+    {
+        cout <<" Present =" << endl;
+    }
+    else if(Attendance[i] == 0)
+    {
+        cout << " Absent  =" << endl;
+    }
+  }
+  cout << "   --------------------------" << endl;
+
+    free(Attendance);
+    cout<<endl;
+    cout << " register closed." << endl;
+    return 0;
+}
