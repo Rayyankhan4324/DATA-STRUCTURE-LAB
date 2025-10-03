@@ -63,5 +63,5 @@ Use of insertion and deletion operations
 
 👨‍💻 Author
 
-Ishtiaq Ahmed
+MUHAMMAD RAYYAN
 Artificial Intelligence Student | C++ & Python Developer | Data Structures Enthusiast
