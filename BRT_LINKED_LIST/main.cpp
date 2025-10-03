@@ -117,9 +117,7 @@ int main()
     LinkedList queue;
 
     cout << "Starting Operations:\n";
-    queue.insert_at_beginning(101);
-    queue.print();
-
+    queue.insert_at_end(101);
     queue.insert_at_end(102);
     queue.insert_at_end(103);
     queue.print();
