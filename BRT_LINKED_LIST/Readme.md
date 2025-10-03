@@ -47,7 +47,7 @@ Save the file as passenger_queue.cpp
 
 Compile the program:
 
-g++ brt_linkedlist.cpp -o queue
+c++ brt_linkedlist.cpp -o queue
 ./queue
 
 
