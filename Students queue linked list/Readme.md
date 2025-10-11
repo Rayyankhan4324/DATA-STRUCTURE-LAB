@@ -1,43 +1,42 @@
-# 🚌 Passenger Queue Management using Linked List  
+# 🎓 Student Queue Management System using Linked List  
 
-A **C++ project** that implements a **dynamic passenger queue system** using a **singly linked list**.  
-This program demonstrates core **data structure concepts** like insertion, deletion, traversal, and dynamic memory allocation.
+A **C++ console-based project** that implements a **dynamic student queue system** using a **singly linked list**.  
+This system simulates real-world queue handling — where students can join, leave, or be served in real time.
 
 ---
 
 ## 📘 Project Overview  
 
-This project simulates a **real-time passenger queue** similar to those in public transport systems or event management lines.  
-It allows passengers (students) to join, leave, or be served dynamically — showcasing the flexibility and efficiency of **linked lists**.
+During events like *Code-a-Thon* or university distributions, students form queues for services (e.g., T-shirts or registration).  
+This program helps organizers manage that queue efficiently without using fixed-size arrays — ensuring **flexibility** and **dynamic memory allocation**.
 
 ---
 
 ## ⚙️ Features  
 
-- ➕ **Add Student** → Insert a new passenger at the end of the queue.  
-- ✅ **Serve Student** → Serve (remove) the first passenger in line.  
-- ❌ **Student Leaves** → Remove a passenger by their ID.  
-- 👥 **Display Queue** → View all passengers currently waiting.  
-- 🔢 **Count Students** → Display total number of passengers in the queue.  
+- ➕ **Add Student** → Add a new student at the end of the queue.  
+- ✅ **Serve Student** → Serve and remove the first student from the queue.  
+- ❌ **Student Leaves** → Remove any student by their ID.  
+- 👥 **Display Queue** → Show all students currently in the queue.  
+- 🔢 **Count Students** → Display the total number of students waiting.  
 
 ---
 
 ## 🧩 Data Structure Design  
 
 ### 🔹 Struct: `Node`  
-Each node represents a passenger and contains:  
-- `int ID` → Passenger’s unique identifier  
-- `string name` → Passenger’s name  
-- `Node* next` → Pointer to the next passenger in the queue  
+Each student is represented as a node containing:  
+- `int ID` → Student’s unique ID  
+- `string name` → Student’s name  
+- `Node* next` → Pointer to the next student  
 
 ### 🔹 Class: `LinkedList`  
-Handles all queue operations using dynamic memory and linked list logic.  
-Main functions include:  
-- `add_student()` → Add new passenger  
-- `serve_student()` → Serve the first passenger  
-- `leave_student(int id)` → Remove passenger by ID  
-- `display_queue()` → Print all passengers  
-- `count_students()` → Show total passengers  
+Manages the queue dynamically using linked list operations:  
+- `add_student()` → Add new student  
+- `serve_student()` → Serve first student  
+- `leave_student(int id)` → Remove a student by ID  
+- `display_queue()` → Show all students  
+- `count_students()` → Show total count  
 
 ---
 
