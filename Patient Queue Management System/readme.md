@@ -1,4 +1,4 @@
-:🏥 ER Patient Management System (Doubly Linked List)
+🏥 ER Patient Management System (Doubly Linked List)
 📌 Overview
 
 This project implements an Emergency Room (ER) Patient Management System using a Doubly Linked List (DLL) in C++.
