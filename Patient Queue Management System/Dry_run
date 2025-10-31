@@ -1,0 +1,70 @@
+Dry Run / Trace – ERQueue Doubly Linked List
+
+Initial State
+
+Empty list:
+head = nullptr, tail = nullptr
+
+Step 1: insertAtEnd(101)
+
+head → [101] ← tail
+  ↑     ↑
+prev = null next = null
+
+Step 2: insertAtEnd(102)
+
+head → [101] <-> [102] ← tail
+  ↑        ↑
+prev = null prev = 101
+       next = null
+
+Step 3: insertAtBeginning(200) // critical patient
+
+head → [200] <-> [101] <-> [102] ← tail
+  ↑        ↑        ↑
+prev = null prev = 200 prev = 101
+       next = 101 next = null
+
+Step 4: insertAtPosition(150, 2)
+(Position 2 means between [200] and [101])
+
+head → [200] <-> [150] <-> [101] <-> [102] ← tail
+  ↑        ↑        ↑        ↑
+prev = null prev = 200 prev = 150 prev = 101
+       next = 150 next = 101 next = null
+
+Step 5: deleteFromBeginning()
+(Remove [200] from the beginning)
+
+head → [150] <-> [101] <-> [102] ← tail
+  ↑        ↑        ↑
+prev = null prev = 150 prev = 101
+       next = 101 next = null
+
+Step 6: insertAtEnd(300)
+
+head → [150] <-> [101] <-> [102] <-> [300] ← tail
+  ↑        ↑        ↑        ↑
+prev = null prev = 150 prev = 101 prev = 102
+       next = 101 next = 102 next = null
+
+Final Answers
+
+(a) PatientID at the head:
+150
+
+(b) PatientID at the tail:
+300
+
+(c) List from head → tail (forward traversal):
+150 → 101 → 102 → 300
+
+(d) List from tail → head (backward traversal):
+300 → 102 → 101 → 150
+
+Final List Visualization
+
+head → [150] <-> [101] <-> [102] <-> [300] ← tail
+  ↑        ↑        ↑        ↑
+prev = null prev = 150 prev = 101 prev = 102
+       next = 101 next = 102 next = null
