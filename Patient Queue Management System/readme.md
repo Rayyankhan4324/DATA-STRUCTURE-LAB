@@ -154,7 +154,6 @@ Build and Run.
 
 🧑‍💻 Author
 
-Name: [Your Name]
+Name: [Muhammad Rayyan]
 Course: Data Structures (C++)
-Instructor: [Teacher’s Name]
-Institution: [Your College Name]
+Instructor: [Sir Shayan Ali Shah].
