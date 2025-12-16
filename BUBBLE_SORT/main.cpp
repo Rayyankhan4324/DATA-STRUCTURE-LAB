@@ -45,7 +45,6 @@ int main() {
     }
 
  
-    // int n = sizeof(arr) / sizeof(arr[0]);
      auto start=high_resolution_clock::now();
      
     bubbleSort(arr, n);
