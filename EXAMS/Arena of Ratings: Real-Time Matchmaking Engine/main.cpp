@@ -1,5 +1,9 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
+#include <cstdlib>
+#include <ios>
+
 using namespace std;
 
 struct Node {
