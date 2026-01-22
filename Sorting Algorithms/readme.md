@@ -33,4 +33,28 @@ It reads data from a file, stores it dynamically, sorts students based on **CGPA
 ---
 
 ## 📁 Project Structure
+├── main.cpp
+├── students_data.txt
+├── ranked_by_cgpa.txt
+└── README.md
+
+--
+
+## 📝 Student Data File Format (`students_data.txt`)
+
+The first line contains the **total number of student records**.  
+Each subsequent line contains student information in the following format:
+
+
+### Example
+3
+101 Ali CS 3 3.45 18 2023
+102 Sara AI 2 3.90 20 2024
+103 Ahmed SE 4 3.90 22 2022
+
+## Output Description.
+====================================================
+        STUDENTS RANKED BY CGPA
+====================================================
+Rank | ID | Name | Dept | Sem | CGPA | Credits | Year
 
